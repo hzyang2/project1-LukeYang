@@ -6,7 +6,7 @@ import dev.luke.handler.HelloHandler;
 import dev.luke.repositories.TicketDaoPostgres;
 import dev.luke.services.TicketService;
 import dev.luke.services.TicketServiceImpl;
-import io.javalin.Javalin;
+//import io.javalin.Javalin;
 
 public class Main {
     //    public static TicketService ticketService = new TicketServiceImpl(new TicketDaoPostgres());
