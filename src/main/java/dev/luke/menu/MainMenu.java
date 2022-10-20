@@ -36,7 +36,7 @@ public class MainMenu {
         email = this.scan.next();
         System.out.println("Please enter password: ");
         password = this.scan.next();
-        User user = this.ticketDao.getUser(email);
+        User user = this.ticketDao.getAllUsers(email);
         if (user == null || user.getPassword().equals(password) == false) {
             System.out.println("invalid credentials");
             user.isAuthenticated = false;

@@ -14,27 +14,26 @@ public class TicketServiceImpl implements TicketService{
     }
 
     @Override
-    public User getUser(String email) {
+    public User addNewUser(User user) {
         return null;
     }
 
     @Override
-    public void addNewUser(User user) {
-
-    }
-
-    @Override
-    public void addNewTicket(Ticket ticket) {
-
-    }
-
-    @Override
-    public void saveTicket(Ticket ticket) {
-
+    public User getAllUsers(String email) {
+        return null;
     }
 
     @Override
     public List<Ticket> getTicketsByStatus(String status, User user) {
         return null;
+    }
+
+    @Override
+    public Ticket addNewTicket(Ticket ticket) {
+        return null;
+    }
+
+    @Override
+    public void saveTicket(Ticket ticket) {
     }
 }

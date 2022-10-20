@@ -52,7 +52,10 @@ public class MenuDriver {
         System.out.println(menu);
         int selection = scan.nextInt();
         switch (selection) {
-            case 1, 2, 3, 4:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
                 mainMenu.viewTickets(selection, menu, user);
                 break;
             case 5:
@@ -83,7 +86,8 @@ public class MenuDriver {
             System.out.println(menu);
             int selection = scan.nextInt();
             switch (selection) {
-                case 1, 2:
+                case 1:
+                case 2:
                     String statusToSet = menu.getMenuCode(selection - 1); //ArrayList is index-0.
                     lastTicket.setStatus(statusToSet);
                     ticketDao.saveTicket(lastTicket);

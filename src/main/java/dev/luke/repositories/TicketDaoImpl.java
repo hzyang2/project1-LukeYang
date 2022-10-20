@@ -1,7 +1,9 @@
 package dev.luke.repositories;
 import dev.luke.entities.Ticket;
 import dev.luke.entities.User;
+import dev.luke.util.ConnectionFactory;
 
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,27 +16,24 @@ public class TicketDaoImpl implements TicketDao {
     private Map<String, User> userTable = new HashMap();
 
     @Override
-    public User getUser(String email) {
+    public User addNewUser(User user) {
+        user.setUser_id(idCount);
+        idCount++;
+        userTable.put(user.getEmail(), user);
+        return user;
+    }
+
+    @Override
+    public User getAllUsers(String email) {
         return userTable.get(email);
     }
 
     @Override
-    public void addNewUser(User user) {
-        user.setUser_id(idCount);
-        idCount++;
-        userTable.put(user.getEmail(), user);
-    }
-
-    @Override
-    public void addNewTicket(Ticket ticket) {
+    public Ticket addNewTicket(Ticket ticket) {
         ticket.setId(idCount);
         idCount++;
         ticketTable.put(ticket.getId(), ticket);
-    }
-
-    @Override
-    public void saveTicket(Ticket ticket) {
-        ticketTable.put(ticket.getId(), ticket);
+        return ticket;
     }
 
     /**
@@ -60,5 +59,11 @@ public class TicketDaoImpl implements TicketDao {
             }
         });
         return tickets;
+    }
+
+    @Override
+    public Ticket saveTicket(Ticket ticket) {
+        ticketTable.put(ticket.getId(), ticket);
+        return ticket;
     }
 }
