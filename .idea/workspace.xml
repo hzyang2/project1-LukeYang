@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5016a96f-d237-4b13-a420-0b3d16e04b37" name="Changes" comment="test">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -20,6 +21,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/luke/repositories/TicketDaoPostgres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/luke/repositories/TicketDaoPostgres.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/luke/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/luke/services/TicketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/luke/services/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/luke/services/TicketServiceImpl.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/luke/repositories/TicketDaoPostgres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/luke/repositories/TicketDaoPostgres.java" afterDir="false" />
+>>>>>>> origin/ReimbursementTicketConsole
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +142,7 @@
       <option name="project" value="LOCAL" />
       <updated>1666283986460</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="test">
       <created>1666284996033</created>
       <option name="number" value="00004" />
@@ -145,6 +151,9 @@
       <updated>1666284996033</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+=======
+    <option name="localTasksCounter" value="4" />
+>>>>>>> origin/ReimbursementTicketConsole
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
