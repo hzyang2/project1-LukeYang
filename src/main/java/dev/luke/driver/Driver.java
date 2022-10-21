@@ -7,7 +7,7 @@ import dev.luke.services.TicketService;
 import dev.luke.services.TicketServiceImpl;
 import io.javalin.Javalin;
 
-public class Main {
+public class Driver {
     public static TicketService ticketService = new TicketServiceImpl(new TicketDaoPostgres());
     public static void main(String[] args) {
         Javalin app = Javalin.create();
@@ -26,10 +26,11 @@ public class Main {
 //        app.delete("/books/{id}", ticketController.deleteBookHandler);
 //        app.get("/books/{id}", ticketController.addNewTicket);
 
-        app.start();
+
 
 //        MenuDriver driver = new MenuDriver();
 //        driver.runMain();
+     app.start();
     }
 }
 
